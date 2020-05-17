@@ -45,7 +45,6 @@ namespace Atom
                    listBox1.Items.Add(yazi);
                 for(int i=0; i <= temp.Length; i++)
                 {
-                    
                     double gelenSayi = Convert.ToDouble(temp[6]);
                     atomSayac++;
                     if (gelenSayi >= enBuyuk)
@@ -57,6 +56,7 @@ namespace Atom
                     else
                         break; 
                 }
+                textBox2
 
 
                /* foreach (var item in temp[0])
