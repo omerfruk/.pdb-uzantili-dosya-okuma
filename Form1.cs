@@ -34,12 +34,43 @@ namespace Atom
             string tempYazi = "";
             double sayi = 1,tempSayi=0;
             String dizi = sw.ReadLine();
+            int atomSayac = 0;
+            double enBuyuk=0;
+            int enBuyukAtomNo;
             while (yazi != null)
             {
                 string[] temp = yazi.Split(' ');
   
                 if (temp[0] == "ATOM")
                    listBox1.Items.Add(yazi);
+                for(int i=0; i <= temp.Length; i++)
+                {
+                    
+                    double gelenSayi = Convert.ToDouble(temp[6]);
+                    atomSayac++;
+                    if (gelenSayi >= enBuyuk)
+                    {
+                        enBuyuk = gelenSayi;
+                        enBuyukAtomNo = temp[1]
+
+                    }
+                    else
+                        break; 
+                }
+
+
+               /* foreach (var item in temp[0])
+                {
+                    int degisken = 0;
+                    for (int i = 0; i<temp.Length;i++ )
+                    {
+                        if (degisken < temp[i])
+                        {
+
+                        }
+                    }
+                    
+                }*/
                     
                 yazi = sw.ReadLine();
               
