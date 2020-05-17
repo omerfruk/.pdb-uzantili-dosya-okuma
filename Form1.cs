@@ -33,8 +33,14 @@ namespace Atom
             string yazi = sw.ReadLine();
             while (yazi != null)
             {
-                listBox1.Items.Add(yazi);
+                
+               // listBox1.Items.Add(yazi);
                 yazi = sw.ReadLine();
+
+            }
+            foreach(String ogeler in listBox1.Items)
+            {
+
             }
             //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
             //Son satır okunduktan sonra okuma işlemini bitirdik
