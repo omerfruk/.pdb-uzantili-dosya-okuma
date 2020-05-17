@@ -31,15 +31,18 @@ namespace Atom
             StreamReader sw = new StreamReader(fs);
             //Okuma işlemi için bir StreamReader nesnesi oluşturduk.
             string yazi = sw.ReadLine();
+            string tempYazi = "";
+            double sayi = 1,tempSayi=0;
+            String dizi = sw.ReadLine();
             while (yazi != null)
             {
-                
-               // listBox1.Items.Add(yazi);
+                string[] temp = yazi.Split(' ');
+  
+                if (temp[0] == "ATOM")
+                   listBox1.Items.Add(yazi);
+                    
                 yazi = sw.ReadLine();
-
-            }
-            foreach(String ogeler in listBox1.Items)
-            {
+              
 
             }
             //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
