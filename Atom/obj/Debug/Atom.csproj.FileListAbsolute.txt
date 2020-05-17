@@ -1,0 +1,10 @@
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.csprojAssemblyReference.cache
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.Form1.resources
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.Properties.Resources.resources
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.csproj.GenerateResource.cache
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.csproj.CoreCompileInputs.cache
+C:\Users\omer\source\repos\Atom\Atom\bin\Debug\Atom.exe.config
+C:\Users\omer\source\repos\Atom\Atom\bin\Debug\Atom.exe
+C:\Users\omer\source\repos\Atom\Atom\bin\Debug\Atom.pdb
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.exe
+C:\Users\omer\source\repos\Atom\Atom\obj\Debug\Atom.pdb
