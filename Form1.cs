@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.CodeDom.Compiler;
+
 namespace Atom
 {   
 
@@ -40,10 +42,29 @@ namespace Atom
             while (yazi != null)
             {
                 string[] temp = yazi.Split(' ');
-  
+
                 if (temp[0] == "ATOM")
-                   listBox1.Items.Add(yazi);
-                for(int i=0; i <= temp.Length; i++)
+                {
+                    listBox1.Items.Add(yazi);
+                    atomSayac++;
+                }
+                yazi = sw.ReadLine();
+            }
+
+            textBox2.Text = (""+atomSayac);
+            //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
+            //Son satır okunduktan sonra okuma işlemini bitirdik
+            sw.Close();
+            fs.Close();
+           
+        }
+       
+        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
+        {
+
+    
+        }
+        /* for(int i=0; i <= temp.Length; i++)
                 {
                     double gelenSayi = Convert.ToDouble(temp[6]);
                     atomSayac++;
@@ -55,38 +76,26 @@ namespace Atom
                     }
                     else
                         break; 
-                }
-                textBox2
-
-
-               /* foreach (var item in temp[0])
-                {
-                    int degisken = 0;
-                    for (int i = 0; i<temp.Length;i++ )
-                    {
-                        if (degisken < temp[i])
-                        {
-
-                        }
-                    }
-                    
                 }*/
-                    
-                yazi = sw.ReadLine();
-              
 
-            }
-            //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
-            //Son satır okunduktan sonra okuma işlemini bitirdik
-            sw.Close();
-            fs.Close();
-           
-        }
 
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
+
+        /* foreach (var item in temp[0])
+         {
+             int degisken = 0;
+             for (int i = 0; i<temp.Length;i++ )
+             {
+                 if (degisken < temp[i])
+                 {
+
+                 }
+             }
+
+         }*/
+         
+        private void label4_Click(object sender, EventArgs e)
         {
 
-    
         }
     }
     }
