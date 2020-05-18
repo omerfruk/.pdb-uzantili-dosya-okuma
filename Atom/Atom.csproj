@@ -95,5 +95,11 @@
   <ItemGroup>
     <None Include="Resources\animal-animal-photography-barbaric-big-561870.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-hanging-bridge-surrounded-by-green-forest-trees-775201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray-bridge-and-trees-814499.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

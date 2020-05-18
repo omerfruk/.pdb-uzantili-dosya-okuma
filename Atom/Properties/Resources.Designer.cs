@@ -69,5 +69,25 @@ namespace Atom.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_hanging_bridge_surrounded_by_green_forest_trees_775201 {
+            get {
+                object obj = ResourceManager.GetObject("black-hanging-bridge-surrounded-by-green-forest-trees-775201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap gray_bridge_and_trees_814499 {
+            get {
+                object obj = ResourceManager.GetObject("gray-bridge-and-trees-814499", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

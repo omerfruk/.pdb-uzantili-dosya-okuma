@@ -22,5 +22,10 @@ namespace Atom
 			Form1 form1 = new Form1();
 			form1.Show();
 		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -121,4 +121,10 @@
   <data name="animal-animal-photography-barbaric-big-561870" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\animal-animal-photography-barbaric-big-561870.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="black-hanging-bridge-surrounded-by-green-forest-trees-775201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\black-hanging-bridge-surrounded-by-green-forest-trees-775201.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gray-bridge-and-trees-814499" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gray-bridge-and-trees-814499.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
