@@ -18,3 +18,4 @@ C:\Users\omer\Desktop\ödev\.pdb-uzantili-dosya-okuma\Atom\obj\Debug\Atom.csproj
 C:\Users\omer\Desktop\ödev\.pdb-uzantili-dosya-okuma\Atom\obj\Debug\Atom.csproj.CoreCompileInputs.cache
 C:\Users\omer\Desktop\ödev\.pdb-uzantili-dosya-okuma\Atom\obj\Debug\Atom.exe
 C:\Users\omer\Desktop\ödev\.pdb-uzantili-dosya-okuma\Atom\obj\Debug\Atom.pdb
+C:\Users\omer\Desktop\ödev\.pdb-uzantili-dosya-okuma\Atom\obj\Debug\Atom.Form2.resources
