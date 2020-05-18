@@ -52,7 +52,7 @@ namespace Atom
                     atomSayac++;
                 }
                 yazi = sw.ReadLine();
-                textBox3.Text = (""+tempSayi); 
+                textBox3.Text = (""+tempSayi); //atomlar arasındaki en büyügünü buluyor 
 
             }
 
