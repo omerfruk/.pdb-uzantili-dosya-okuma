@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.CodeDom.Compiler;
+using System.Collections;
+using System.Globalization;
 
 namespace Atom
 {   
@@ -34,26 +36,27 @@ namespace Atom
             //Okuma işlemi için bir StreamReader nesnesi oluşturduk.
             string yazi = sw.ReadLine();
             string tempYazi = "";
-            double sayi = 1,tempSayi=0;
+            double sayi = 1.0, tempSayi = 0.0;
             String dizi = sw.ReadLine();
             int atomSayac = 0; // atomlari saymak icin olusturulan degisken 
             while (yazi != null) // burada list box a atomlarimizi yazdiriken ayni zamanda atomlarimizi sayiyoruz
             {
-                string[] temp = yazi.Split(' ');
+                ArrayList temp = explode(yazi);
 
-                if (temp[0] == "ATOM")
+                if (temp[0].ToString() == "ATOM")
                 {
+                    sayi = Convert.ToDouble(temp[6].ToString(), CultureInfo.InvariantCulture);
+                    if (sayi > tempSayi)
+                        tempSayi = sayi;
                     listBox1.Items.Add(yazi);
-                    atomSayac++;               
+                    atomSayac++;
                 }
-                //if(temp[0] == "HEADER")
-                //{
-                   
-                //}
                 yazi = sw.ReadLine();
+                textBox3.Text = (""+tempSayi); 
+
             }
 
-            //textBox2.Text tempSayi
+            
             textBox2.Text = ("protegin toplam "+atomSayac+" atomdan oluşmaktadır");
             //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
             //Son satır okunduktan sonra okuma işlemini bitirdik
@@ -63,7 +66,27 @@ namespace Atom
 
            
         }
-       
+        public ArrayList explode(string row)
+        {
+            ArrayList myRow = new ArrayList();
+            string[] temp;
+            int i = 0;
+            do
+            {
+                row = row.TrimEnd();
+                row = row.TrimStart();
+                temp = row.Split(' ');
+                myRow.Add(temp[0]);
+                row = "";
+                for (int j = 1; j < temp.Length; j++)
+                {
+                    row += temp[j] + " ";
+                }
+            } while (temp.Length > 1);
+
+            return myRow;
+        }
+
         private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
         {
 
