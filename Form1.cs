@@ -49,7 +49,7 @@ namespace Atom
                     if (sayi > tempSayi)
                     {
                         tempSayi = sayi;
-                       
+                        textBox3.Text = ("  " + tempSayi + "   " + temp[1] + "   " + temp[2]); //atomlar arasındaki en büyügünü buluyor 
                     } 
                     listBox1.Items.Add(yazi);
                     atomSayac++;
