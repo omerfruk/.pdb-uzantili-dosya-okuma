@@ -36,26 +36,31 @@ namespace Atom
             string tempYazi = "";
             double sayi = 1,tempSayi=0;
             String dizi = sw.ReadLine();
-            int atomSayac = 0;
-            double enBuyuk=0;
-            int enBuyukAtomNo;
-            while (yazi != null)
+            int atomSayac = 0; // atomlari saymak icin olusturulan degisken 
+            while (yazi != null) // burada list box a atomlarimizi yazdiriken ayni zamanda atomlarimizi sayiyoruz
             {
                 string[] temp = yazi.Split(' ');
 
                 if (temp[0] == "ATOM")
                 {
                     listBox1.Items.Add(yazi);
-                    atomSayac++;
+                    atomSayac++;               
                 }
+                //if(temp[0] == "HEADER")
+                //{
+                   
+                //}
                 yazi = sw.ReadLine();
             }
 
-            textBox2.Text = (""+atomSayac);
+            //textBox2.Text tempSayi
+            textBox2.Text = ("protegin toplam "+atomSayac+" atomdan oluşmaktadır");
             //Satır satır okuma işlemini gerçekleştirdik ve ekrana yazdırdık
             //Son satır okunduktan sonra okuma işlemini bitirdik
             sw.Close();
             fs.Close();
+
+
            
         }
        
