@@ -87,11 +87,11 @@ namespace Atom
             string[] temp;
             int i = 0;
             do
-            {
-                row = row.TrimEnd();
-                row = row.TrimStart();
+            { // do while yapmam ve ilk basta sondan almamın bosluk almamin sebebi baslangic bosluklu olacagından  
+                row = row.TrimEnd();//bitis boslugunu aldiralim atayalim    
+                row = row.TrimStart();//baslangıc boslugunu aldiralim atayalim    
                 temp = row.Split(' ');
-                myRow.Add(temp[0]);
+                myRow.Add(temp[0]);//Arrayliste ekeleyelim
                 row = "";
                 for (int j = 1; j < temp.Length; j++)
                 {
@@ -107,34 +107,7 @@ namespace Atom
 
     
         }
-        /* for(int i=0; i <= temp.Length; i++)
-                {
-                    double gelenSayi = Convert.ToDouble(temp[6]);
-                    atomSayac++;
-                    if (gelenSayi >= enBuyuk)
-                    {
-                        enBuyuk = gelenSayi;
-                        enBuyukAtomNo = temp[1]
-
-                    }
-                    else
-                        break; 
-                }*/
-
-
-
-        /* foreach (var item in temp[0])
-         {
-             int degisken = 0;
-             for (int i = 0; i<temp.Length;i++ )
-             {
-                 if (degisken < temp[i])
-                 {
-
-                 }
-             }
-
-         }*/
+        
          
         private void label4_Click(object sender, EventArgs e)
         {
