@@ -50,9 +50,12 @@ namespace Atom
                         tempSayi = sayi;
                     listBox1.Items.Add(yazi);
                     atomSayac++;
+                   
                 }
+                if (temp[0].ToString() == "HEADER")
+                    textBox1.Text = temp[1].ToString();
                 yazi = sw.ReadLine();
-                textBox3.Text = (""+tempSayi); //atomlar arasındaki en büyügünü buluyor 
+                textBox3.Text = (""+tempSayi+""); //atomlar arasındaki en büyügünü buluyor 
 
             }
 
