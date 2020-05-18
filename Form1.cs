@@ -1,5 +1,4 @@
-﻿
-/*
+﻿/*
  *
  * Omer Faruk Tasdeir 201713171068
  * 2.sinif 1. ogretim 
@@ -10,7 +9,6 @@
  */
 
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -52,8 +50,8 @@ namespace Atom
             int atomSayac = 0; // atomlari saymak icin olusturulan degisken 
             while (yazi != null) // burada list box a atomlarimizi yazdiriken ayni zamanda atomlarimizi sayiyoruz
             {
-                ArrayList temp = explode(yazi);
-
+                ArrayList temp = explode(yazi); 
+                // protegin ismini bir yerden bulamadigimiz icin dosyalardaki header kısmındaki 2.indexli veriler olarak varsaydık
                 if (temp[0].ToString() == "ATOM")
                 {
                     sayi = Convert.ToDouble(temp[6].ToString(), CultureInfo.InvariantCulture);
