@@ -50,7 +50,7 @@ namespace Atom
             int atomSayac = 0; // atomlari saymak icin olusturulan degisken 
             while (yazi != null) // burada list box a atomlarimizi yazdiriken ayni zamanda atomlarimizi sayiyoruz
             {
-                ArrayList temp = explode(yazi); 
+                ArrayList temp = explode_Mr_Tasdermir(yazi); // indirgediğimiz db leri arrayliste atadık
                 // protegin ismini bir yerden bulamadigimiz icin dosyalardaki header kısmındaki 2.indexli veriler olarak varsaydık
                 if (temp[0].ToString() == "ATOM")
                 {
@@ -81,7 +81,7 @@ namespace Atom
 
            
         }
-        public ArrayList explode(string row) // boslukları giderme 
+        public ArrayList explode_Mr_Tasdermir(string row) // boslukları giderme metodu Mr_Tasdemir imzasiyla
         {
             ArrayList myRow = new ArrayList(); //arraylist olusturma 
             string[] temp;
