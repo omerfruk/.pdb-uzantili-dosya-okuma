@@ -47,7 +47,10 @@ namespace Atom
                 {
                     sayi = Convert.ToDouble(temp[6].ToString(), CultureInfo.InvariantCulture);
                     if (sayi > tempSayi)
+                    {
                         tempSayi = sayi;
+                       
+                    } 
                     listBox1.Items.Add(yazi);
                     atomSayac++;
                    
@@ -55,7 +58,7 @@ namespace Atom
                 if (temp[0].ToString() == "HEADER")
                     textBox1.Text = temp[1].ToString();
                 yazi = sw.ReadLine();
-                textBox3.Text = (""+tempSayi+""); //atomlar arasındaki en büyügünü buluyor 
+               
 
             }
 
@@ -69,9 +72,9 @@ namespace Atom
 
            
         }
-        public ArrayList explode(string row)
+        public ArrayList explode(string row) // boslukları giderme 
         {
-            ArrayList myRow = new ArrayList();
+            ArrayList myRow = new ArrayList(); //arraylist olusturma 
             string[] temp;
             int i = 0;
             do
