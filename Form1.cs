@@ -1,4 +1,15 @@
-﻿using System;
+﻿
+/*
+ *
+ * Omer Faruk Tasdeir 201713171068
+ * 2.sinif 1. ogretim 
+ * Gorsel programlama 
+ *  projelerimin ilerleyişini github tan izleyebilrisiniz
+ *  https://github.com/omerfruk/.pdb-uzantili-dosya-okuma.git
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
