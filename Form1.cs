@@ -49,8 +49,8 @@ namespace Atom
                     if (sayi > tempSayi)
                     {
                         tempSayi = sayi;
-                        textBox3.Text = ("  " + tempSayi + "   " + temp[1] + "   " + temp[2]); //atomlar arasındaki en büyügünü buluyor 
-                    } 
+                        textBox3.Text = ("X koordinati en buyuk olan atomu:\t\t  " + tempSayi + "\t \t  Atomun numarasi:   " + temp[1] + "\t   Atomun ismi:   " + temp[2]); //atomlar arasındaki en büyügünü buluyor 
+                    }
                     listBox1.Items.Add(yazi);
                     atomSayac++;
                    
