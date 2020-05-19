@@ -1,8 +1,8 @@
 ﻿/*
  *
- * Omer Faruk Tasdeir 201713171068
- * 2.sinif 1. ogretim 
- * Gorsel programlama 
+ *  Omer Faruk Tasdeir 201713171068
+ *  2.sinif 1. ogretim 
+ *  Gorsel programlama 
  *  projelerimin ilerleyişini github tan izleyebilrisiniz
  *  https://github.com/omerfruk/.pdb-uzantili-dosya-okuma.git
  * 
